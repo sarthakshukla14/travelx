@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="GoTravel — curated luxury journeys to the world's most breathtaking destinations. Handpicked islands, mountains and coastlines, planned for you.">
+   <meta name="theme-color" content="#0b1220">
+
+   <!--=============== OPEN GRAPH ===============-->
+   <meta property="og:title" content="GoTravel — Travel Around The World">
+   <meta property="og:description" content="Curated luxury journeys to the world's most breathtaking destinations.">
+   <meta property="og:type" content="website">
+   <meta property="og:image" content="assets/img/home-bg.png">
+
+   <!--=============== FAVICON ===============-->
+   <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
+
+   <!--=============== PRECONNECT ===============-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+   <!--=============== REMIXICONS ===============-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+
+   <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="assets/css/styles.css">
+
+   <title>GoTravel — Travel Around The World</title>
+</head>
+<body>
+   <!--==================== PRELOADER ====================-->
+   <div class="preloader" id="preloader" aria-hidden="true">
+      <div class="preloader__mark">
+         <i class="ri-plane-fill"></i>
+      </div>
+      <div class="preloader__bar"><span></span></div>
+   </div>
+
+   <a class="skip-link" href="#home">Skip to content</a>
+
+   <!--==================== HEADER ====================-->
+   <header class="header" id="header">
+      <nav class="nav container">
+         <a href="#home" class="nav__logo">
+            <span class="nav__logo-icon"><img src="assets/img/logo.svg" alt="" width="18" height="18"></span>
+            GoTravel
+         </a>
+
+         <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+               <li class="nav__item"><a href="#home" class="nav__link active-link" data-section="home">Home</a></li>
+               <li class="nav__item"><a href="#destination" class="nav__link" data-section="destination">Destinations</a></li>
+               <li class="nav__item"><a href="#testimonial" class="nav__link" data-section="testimonial">Testimonials</a></li>
+               <li class="nav__item"><a href="#gallery" class="nav__link" data-section="gallery">Gallery</a></li>
+               <li class="nav__item"><a href="#join" class="nav__link" data-section="join">Contact</a></li>
+            </ul>
+            <button class="nav__close" id="nav-close" aria-label="Close menu">
+               <i class="ri-close-line"></i>
+            </button>
+         </div>
+
+         <div class="nav__actions">
+            <a href="#join" class="button button--sm nav__cta">
+               Book Now <i class="ri-arrow-right-up-line"></i>
+            </a>
+            <button class="nav__toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+               <i class="ri-menu-3-line"></i>
+            </button>
+         </div>
+      </nav>
+      <div class="nav__backdrop" id="nav-backdrop"></div>
+   </header>
+
+   <!--==================== MAIN ====================-->
+   <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+         <div class="home__blob home__blob--1" aria-hidden="true"></div>
+         <div class="home__blob home__blob--2" aria-hidden="true"></div>
+
+         <div class="home__container container">
+            <div class="home__data" data-reveal="left">
+               <p class="section__eyebrow">
+                  <i class="ri-compass-3-line"></i> Discover your next journey
+               </p>
+               <h1 class="home__title">
+                  Travel Around <span class="home__title-accent">The World</span>
+               </h1>
+               <p class="home__description">
+                  Explore the most beautiful tourist spots on the planet — curated coastlines,
+                  hidden islands and mountain escapes, planned down to the last detail so all
+                  you have to do is show up.
+               </p>
+
+               <div class="home__buttons">
+                  <a href="#destination" class="button">
+                     Explore Destinations <i class="ri-arrow-right-line"></i>
+                  </a>
+                  <a href="#gallery" class="button button--ghost">
+                     <i class="ri-play-circle-line"></i> View Gallery
+                  </a>
+               </div>
+
+               <div class="home__stats">
+                  <div class="home__stat">
+                     <span class="home__stat-number" data-counter data-target="12000" data-suffix="+">0</span>
+                     <span class="home__stat-label">Happy travelers</span>
+                  </div>
+                  <div class="home__stat">
+                     <span class="home__stat-number" data-counter data-target="90" data-suffix="+">0</span>
+                     <span class="home__stat-label">Destinations</span>
+                  </div>
+                  <div class="home__stat">
+                     <span class="home__stat-number" data-counter data-target="4.9" data-decimal="1">0</span>
+                     <span class="home__stat-label">Average rating</span>
+                  </div>
+               </div>
+            </div>
+
+            <div class="home__visual" data-reveal="right">
+               <div class="home__frame" data-parallax="0.06">
+                  <img src="assets/img/home-bg.png" alt="Aerial view of a turquoise cove with cliffs at McWay Falls" class="home__img" width="620" height="620" fetchpriority="high">
+               </div>
+
+               <div class="home__thumbs">
+                  <img src="assets/img/home-img-2.png" alt="Turquoise alpine lake surrounded by mountains in Banff" class="home__thumb" width="110" height="110" loading="lazy">
+                  <img src="assets/img/home-img-3.png" alt="Green karst islands in a tropical lagoon" class="home__thumb" width="110" height="110" loading="lazy">
+               </div>
+
+               <div class="home__card home__card--rating glass">
+                  <div class="home__card-stars" aria-hidden="true">
+                     <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                  </div>
+                  <p><strong>4.9</strong> rated by 2,480 travelers</p>
+               </div>
+
+               <div class="home__card home__card--globe glass">
+                  <i class="ri-earth-line"></i>
+                  <p><strong>90+</strong> countries covered</p>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!--==================== FEATURES ====================-->
+      <section class="features section" aria-label="Why travel with GoTravel">
+         <div class="features__container container">
+            <article class="features__card" data-reveal data-reveal-delay="0">
+               <i class="ri-shield-star-line"></i>
+               <h3>Best Price Guarantee</h3>
+               <p>Transparent pricing with no hidden fees, ever.</p>
+            </article>
+            <article class="features__card" data-reveal data-reveal-delay="1">
+               <i class="ri-customer-service-2-line"></i>
+               <h3>24/7 Concierge</h3>
+               <p>Real humans on call before, during and after your trip.</p>
+            </article>
+            <article class="features__card" data-reveal data-reveal-delay="2">
+               <i class="ri-map-pin-star-line"></i>
+               <h3>Handpicked Stays</h3>
+               <p>Every destination is scouted and vetted by our team.</p>
+            </article>
+            <article class="features__card" data-reveal data-reveal-delay="3">
+               <i class="ri-refresh-line"></i>
+               <h3>Flexible Booking</h3>
+               <p>Free date changes up to 14 days before departure.</p>
+            </article>
+         </div>
+      </section>
+
+      <!--==================== DESTINATION ====================-->
+      <section class="destination section" id="destination">
+         <div class="container">
+            <div class="section__head" data-reveal>
+               <p class="section__eyebrow"><i class="ri-map-2-line"></i> Handpicked for you</p>
+               <h2 class="section__title">Find Your Best Destination</h2>
+               <p class="section__description">Three of our travelers' favorite escapes this season — each one scouted, vetted and loved by the people who visited them.</p>
+            </div>
+
+            <div class="destination__container grid">
+               <article class="destination__card" data-reveal data-reveal-delay="0">
+                  <div class="destination__img-wrapper">
+                     <img src="assets/img/destination-img-1.png" alt="Aerial view of a forested coastline meeting a sandy beach in Bali" class="destination__img" loading="lazy" width="500" height="500">
+                     <span class="destination__badge"><i class="ri-star-fill"></i> 4.9</span>
+                  </div>
+                  <div class="destination__data">
+                     <span class="destination__location"><i class="ri-map-pin-fill"></i> Indonesia</span>
+                     <h3 class="destination__title">Bali Island</h3>
+                     <p class="destination__price">from <strong>$899</strong> / person</p>
+                     <a href="#join" class="destination__link">
+                        Plan this trip <i class="ri-arrow-right-up-line"></i>
+                     </a>
+                  </div>
+               </article>
+
+               <article class="destination__card" data-reveal data-reveal-delay="1">
+                  <div class="destination__img-wrapper">
+                     <img src="assets/img/destination-img-2.png" alt="Limestone islands rising from a turquoise lagoon in Raja Ampat" class="destination__img" loading="lazy" width="500" height="500">
+                     <span class="destination__badge"><i class="ri-star-fill"></i> 4.8</span>
+                  </div>
+                  <div class="destination__data">
+                     <span class="destination__location"><i class="ri-map-pin-fill"></i> Philippines</span>
+                     <h3 class="destination__title">Palawan Bay</h3>
+                     <p class="destination__price">from <strong>$1,120</strong> / person</p>
+                     <a href="#join" class="destination__link">
+                        Plan this trip <i class="ri-arrow-right-up-line"></i>
+                     </a>
+                  </div>
+               </article>
+
+               <article class="destination__card" data-reveal data-reveal-delay="2">
+                  <div class="destination__img-wrapper">
+                     <img src="assets/img/destination-img-3.png" alt="Boats anchored in a calm cove beneath a cliffside village" class="destination__img" loading="lazy" width="500" height="500">
+                     <span class="destination__badge"><i class="ri-star-fill"></i> 4.9</span>
+                  </div>
+                  <div class="destination__data">
+                     <span class="destination__location"><i class="ri-map-pin-fill"></i> Turkey</span>
+                     <h3 class="destination__title">Bodrum Coast</h3>
+                     <p class="destination__price">from <strong>$975</strong> / person</p>
+                     <a href="#join" class="destination__link">
+                        Plan this trip <i class="ri-arrow-right-up-line"></i>
+                     </a>
+                  </div>
+               </article>
+            </div>
+
+            <div class="destination__more" data-reveal>
+               <a href="#gallery" class="button button--outline">Explore all destinations <i class="ri-arrow-right-line"></i></a>
+            </div>
+         </div>
+      </section>
+
+      <!--==================== QUOTE / PARALLAX BANNER ====================-->
+      <section class="quote" aria-label="Travel inspiration">
+         <div class="quote__bg" data-parallax="0.15">
+            <img src="assets/img/home-img-4.png" alt="" role="presentation">
+         </div>
+         <div class="quote__overlay"></div>
+         <div class="container quote__container" data-reveal>
+            <i class="ri-double-quotes-l quote__icon"></i>
+            <p class="quote__text">The world is a book, and those who do not travel read only one page.</p>
+            <span class="quote__author">— Saint Augustine</span>
+         </div>
+      </section>
+
+      <!--==================== TESTIMONIAL ====================-->
+      <section class="testimonial section" id="testimonial">
+         <div class="container">
+            <div class="section__head" data-reveal>
+               <p class="section__eyebrow"><i class="ri-chat-quote-line"></i> Traveler stories</p>
+               <h2 class="section__title">What Are They Saying?</h2>
+               <p class="section__description">Real trips, real people. Here's what a few of our travelers had to say when they got home.</p>
+            </div>
+
+            <div class="testimonial__container" data-reveal>
+               <div class="testimonial__visual">
+                  <img src="assets/img/testimonial-img.png" alt="Turquoise glacial lake beneath the Himalayan peaks near Gokyo" width="420" height="520" loading="lazy">
+               </div>
+
+               <div class="testimonial__slider">
+                  <ul class="testimonial__track" id="testimonial-track">
+                     <li class="testimonial__card">
+                        <i class="ri-double-quotes-l testimonial__quote-icon"></i>
+                        <div class="testimonial__stars" aria-hidden="true"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i></div>
+                        <p class="testimonial__text">I was delighted to visit this country because the scenery is so beautiful. The residents also welcomed me happily and with smiles the whole trip.</p>
+                        <div class="testimonial__profile">
+                           <img src="assets/img/testimonial-profile-1.png" alt="" width="48" height="48" loading="lazy">
+                           <div>
+                              <h4>Will Turner</h4>
+                              <span>Photographer</span>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="testimonial__card">
+                        <i class="ri-double-quotes-l testimonial__quote-icon"></i>
+                        <div class="testimonial__stars" aria-hidden="true"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i></div>
+                        <p class="testimonial__text">Every detail was taken care of before we even thought to ask. Easily the smoothest and most memorable trip our family has ever taken.</p>
+                        <div class="testimonial__profile">
+                           <img src="assets/img/testimonial-profile-2.png" alt="" width="48" height="48" loading="lazy">
+                           <div>
+                              <h4>Elena Cruz</h4>
+                              <span>Travel Blogger</span>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="testimonial__card">
+                        <i class="ri-double-quotes-l testimonial__quote-icon"></i>
+                        <div class="testimonial__stars" aria-hidden="true"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i></div>
+                        <p class="testimonial__text">From booking to boarding, everything felt effortless. GoTravel found us a route we never would have planned ourselves — and it was perfect.</p>
+                        <div class="testimonial__profile">
+                           <img src="assets/img/testimonial-profile-3.png" alt="" width="48" height="48" loading="lazy">
+                           <div>
+                              <h4>Marco Bellini</h4>
+                              <span>Adventurer</span>
+                           </div>
+                        </div>
+                     </li>
+                  </ul>
+
+                  <div class="testimonial__controls">
+                     <button class="testimonial__arrow" id="testimonial-prev" aria-label="Previous testimonial"><i class="ri-arrow-left-line"></i></button>
+                     <div class="testimonial__dots" id="testimonial-dots"></div>
+                     <button class="testimonial__arrow" id="testimonial-next" aria-label="Next testimonial"><i class="ri-arrow-right-line"></i></button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!--==================== GALLERY ====================-->
+      <section class="gallery section" id="gallery">
+         <div class="container">
+            <div class="section__head" data-reveal>
+               <p class="section__eyebrow"><i class="ri-image-2-line"></i> Moments worth chasing</p>
+               <h2 class="section__title">Gallery</h2>
+               <p class="section__description">A glimpse into the destinations our travelers keep going back to.</p>
+            </div>
+
+            <div class="gallery__container" data-reveal>
+               <figure class="gallery__item gallery__item--1">
+                  <img src="assets/img/gallery-img-1.png" alt="Cliffside forest meeting a hidden beach in Nusa Penida" loading="lazy" width="700" height="500">
+                  <figcaption><i class="ri-map-pin-fill"></i> Nusa Penida, Indonesia</figcaption>
+               </figure>
+               <figure class="gallery__item gallery__item--2">
+                  <img src="assets/img/gallery-img-2.png" alt="Karst islands scattered across a turquoise lagoon" loading="lazy" width="700" height="500">
+                  <figcaption><i class="ri-map-pin-fill"></i> El Nido, Philippines</figcaption>
+               </figure>
+               <figure class="gallery__item gallery__item--3">
+                  <img src="assets/img/gallery-img-3.png" alt="Sailboats anchored along a sandy peninsula" loading="lazy" width="700" height="500">
+                  <figcaption><i class="ri-map-pin-fill"></i> Bodrum, Turkey</figcaption>
+               </figure>
+               <figure class="gallery__item gallery__item--4">
+                  <img src="assets/img/gallery-img-4.png" alt="White and blue domed buildings overlooking the sea in Santorini" loading="lazy" width="700" height="500">
+                  <figcaption><i class="ri-map-pin-fill"></i> Santorini, Greece</figcaption>
+               </figure>
+            </div>
+         </div>
+      </section>
+
+      <!--==================== JOIN ====================-->
+      <section class="join section" id="join">
+         <div class="join__container container">
+            <div class="join__visual" data-reveal="left">
+               <img src="assets/img/join-img.png" alt="Aerial view of a cliffside beach club over clear water" loading="lazy" width="560" height="620">
+               <div class="join__avatars glass" aria-hidden="true">
+                  <img src="assets/img/testimonial-profile-1.png" alt="">
+                  <img src="assets/img/testimonial-profile-2.png" alt="">
+                  <img src="assets/img/testimonial-profile-3.png" alt="">
+                  <span>+12k</span>
+               </div>
+            </div>
+
+            <div class="join__data" data-reveal="right">
+               <p class="section__eyebrow section__eyebrow--light"><i class="ri-send-plane-line"></i> Stay in the loop</p>
+               <h2 class="join__title">Your Journey Starts Here</h2>
+               <p class="join__description">
+                  Get early access to new destinations, member-only fares and travel
+                  inspiration delivered straight to your inbox.
+               </p>
+
+               <form class="join__form" id="join-form" novalidate>
+                  <label for="join-email" class="visually-hidden">Email address</label>
+                  <div class="join__input-wrapper">
+                     <i class="ri-mail-line"></i>
+                     <input type="email" id="join-email" name="email" placeholder="Enter your email" required>
+                  </div>
+                  <button type="submit" class="button">
+                     Join Newsletter <i class="ri-arrow-right-line"></i>
+                  </button>
+               </form>
+               <p class="join__note" id="join-note"><i class="ri-shield-check-line"></i> No spam. Unsubscribe anytime.</p>
+            </div>
+         </div>
+      </section>
+   </main>
+
+   <!--==================== FOOTER ====================-->
+   <footer class="footer">
+      <div class="footer__glow" aria-hidden="true"></div>
+      <div class="container footer__container">
+         <div class="footer__brand">
+            <a href="#home" class="nav__logo">
+               <span class="nav__logo-icon"><img src="assets/img/logo.svg" alt="" width="18" height="18"></span>
+               GoTravel
+            </a>
+            <p class="footer__description">
+               Curated journeys to the world's most breathtaking places —
+               planned with care, guided with expertise.
+            </p>
+            <div class="footer__socials">
+               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="ri-facebook-circle-line"></i></a>
+               <a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)"><i class="ri-twitter-x-line"></i></a>
+               <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="ri-youtube-line"></i></a>
+            </div>
+         </div>
+
+         <nav class="footer__group" aria-label="Explore">
+            <h3 class="footer__title">Explore</h3>
+            <ul class="footer__list">
+               <li><a href="#home" class="footer__link">Home</a></li>
+               <li><a href="#destination" class="footer__link">Destinations</a></li>
+               <li><a href="#testimonial" class="footer__link">Testimonials</a></li>
+               <li><a href="#gallery" class="footer__link">Gallery</a></li>
+            </ul>
+         </nav>
+
+         <nav class="footer__group" aria-label="Company">
+            <h3 class="footer__title">Company</h3>
+            <ul class="footer__list">
+               <li><a href="#" class="footer__link">About Us</a></li>
+               <li><a href="#" class="footer__link">Careers</a></li>
+               <li><a href="#" class="footer__link">Privacy Policy</a></li>
+               <li><a href="#" class="footer__link">Terms of Service</a></li>
+            </ul>
+         </nav>
+
+         <div class="footer__group">
+            <h3 class="footer__title">Contact</h3>
+            <ul class="footer__list">
+               <li><a href="mailto:hello@gotravel.com" class="footer__link"><i class="ri-mail-line"></i> hello@gotravel.com</a></li>
+               <li><a href="tel:+15551234567" class="footer__link"><i class="ri-phone-line"></i> +1 (555) 123-4567</a></li>
+               <li><span class="footer__link footer__link--static"><i class="ri-map-pin-line"></i> San Francisco, CA</span></li>
+            </ul>
+         </div>
+      </div>
+
+      <div class="footer__bottom container">
+         <p>&copy; <span id="year"></span> GoTravel. All rights reserved.</p>
+         <p class="footer__credit">Designed for travelers, by travelers.</p>
+      </div>
+   </footer>
+
+   <!--========== SCROLL UP ==========-->
+   <button class="scrollup" id="scroll-up" aria-label="Scroll to top">
+      <svg class="scrollup__ring" viewBox="0 0 36 36" aria-hidden="true">
+         <circle cx="18" cy="18" r="16"></circle>
+      </svg>
+      <i class="ri-arrow-up-line"></i>
+   </button>
+
+   <!--==================== LIGHTBOX ====================-->
+   <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image preview" hidden>
+      <button class="lightbox__close" id="lightbox-close" aria-label="Close preview"><i class="ri-close-line"></i></button>
+      <img src="" alt="" id="lightbox-img">
+      <p id="lightbox-caption"></p>
+   </div>
+
+   <!--=============== MAIN JS ===============-->
+   <script src="assets/js/main.js" defer></script>
+</body>
+</html>
